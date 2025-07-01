@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="booking.css">
+    <title>Document</title>
+</head>
+<body>
+   <div class="Booking-form">
+     <h1>Book Your <span>Appointment</span></h1>
+    <p>Schedule a consultation with our experienced doctors. Choose your prefered time and specialist.</p>
+ 
+    <form class="form">
+   <div class="form-row">
+     <div><i class="fa-thin fa-user"></i> Full Name <br>
+    <input type="text"  id="name" placeholder="Enter your full name"></div>
+  <div>
+      <i class="fa-thin fa-envelope "></i> Email Address <br>
+    <input type="text"  id="email" placeholder="Enter your email">
+  </div>
+   </div>
+    <br>
+    <div class="form-row">
+        <div><i class="fa-thin fa-phone"></i>Phone Number <br>
+    <input type="tel"  id="Number" placeholder="Enter your phone number">
+    </div>
+   <div>
+     <i class="fa-thin fa-calendar"></i> Preferred Date <br>
+    <input type="date" id="date" placeholder="dd-mm-yyyy">
+   </div>
+    </div>
+    <br>
+    <div class="form-row">
+   <div class="form-group">
+     <i class="fa-thin fa-clock"></i> Preferred Time <br>
+    <select  id="time">
+        <option selected>Select time slot</option>
+        <option>10:00 AM - 12:00 AM</option>
+        <option>01:00 PM - 03:00 PM</option>
+        <option>03:00PM - 06:00PM</option>
+        <option>07:00PM - 09:00PM</option>
+    </select>
+   </div>
+    
+   <div class="form-group" >
+     Choose Doctor <br>
+    <select  id="">
+        <option selected>Select a Doctor</option>
+        <option>Dr. Prashant Patel</option>
+        <option>Dr. Tushar</option>
+        <option>Dr. Arvind</option>
+        <option>Dr. Rohit</option>
+    </select>
+   </div>
+    </div>
+    <br>
+   <div class="full-width">
+     <i class="fa-thin fa-memo-pad"></i> Reason for Visit <br>
+    <textarea id="message" placeholder="briefly describe your symtoms or reason for the appiontment"></textarea>
+   </div>
+   <br>
+        <a href=""><button type="Submit" class="submit-btn">Book Appointment</button></a>
+    
+   </form>
+  </div>
+</body>
+</html>
