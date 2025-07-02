@@ -1,7 +1,7 @@
 {
-    "Dr-Appointment":[
+  "Dr-Appointment": [
     {
-      "name": "vineet",
+      "Name": "vineet",
       "Email": "vineetkushwaha2010@gmail.com",
       "Phonenumber": "1234567890",
       "Date": "2025-07-02",
@@ -10,7 +10,7 @@
       "id": "a6d3"
     },
     {
-      "name": "Abhinav",
+      "Name": "Abhinav",
       "Email": "abhinavkumar2010@gmail.com",
       "Phonenumber": "9876543210",
       "Date": "2025-07-05",
@@ -19,7 +19,7 @@
       "id": "1ab3"
     },
     {
-      "name": "Ravi",
+      "Name": "Ravi",
       "Email": "ravitext2010@gmail.com",
       "Phonenumber": "8839003275",
       "Date": "2025-07-07",
@@ -28,7 +28,7 @@
       "id": "6332"
     },
     {
-      "name": "jatin",
+      "Name": "jatin",
       "Email": "jatinkumar123@gmail.com",
       "Phonenumber": "7697150339",
       "Date": "2025-07-10",
@@ -36,5 +36,5 @@
       "Doctorname": "Dr. Rohit",
       "id": "fbdc"
     }
-    ]
+  ]
 }
