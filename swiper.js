@@ -16,8 +16,8 @@ var swiper = new Swiper(".mySwiper", {
       },
     });
 
-     function toggleMenu() {
-    const navLinks = document.querySelector("nav ul");
+    let toggleMenu=()=> {
+    let navLinks = document.querySelector("nav ul");
     navLinks.classList.toggle("active");
   }
 
