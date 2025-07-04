@@ -1,70 +1,115 @@
-*{
-    margin: 0px;
-    padding: 0px;
+  * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-h1{
+
+
+h1 {
     text-align: center;
-}
-h1 span{
-    color: #00a1a7;
-}
-p{
-    text-align: center;
-}
-body{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-     
-}
-.Booking-form{
- 
-    margin-bottom: 30px;
-    background-color:rgba(169, 181, 194, 0.2);
-    box-shadow: 0 0 12px rgba(158, 151, 151, 0.1);
-    padding: 20px;
-    border-radius: 15px;
-}
-.form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border: 1px  solid white;
-    width: 750px;
-    height: 500px;
-    padding: 40px;
-    border-radius: 20px;
-    background-color: rgb(115, 164, 212,0.2);
-}
-.form-row{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
 }
 
-input,select,textarea{
-    padding: 8px;
-    width:300px;
-    border: none;
+h1 span {
+    color: #00a1a7;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #f5fafd;
+    padding: 20px;
+}
+
+.Booking-form {
+    background-color: rgba(169, 181, 194, 0.2);
+    box-shadow: rgba(158, 151, 151, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 850px;
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(115, 164, 212, 0.2);
+    border-radius: 20px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.form-row div{
+      flex: 1;
+    min-width: 250px;
+}
+.form-group {
+    flex: 1;
+    min-width: 250px;
+}
+
+input,select,textarea {
+    padding: 10px;
+    width: 100%;
     font-size: 15px;
     border: 1px solid #ccc;
     border-radius: 10px;
     outline: none;
+    margin-top: 5px;
 }
-textarea{
-    width: 650px;
+
+textarea {
     height: 100px;
 }
-.submit-btn{
+
+.full-width {
+    width: 100%;
+}
+
+.submit-btn {
     background-color: #00a1a7;
     color: white;
     width: 200px;
     padding: 15px;
     border-radius: 35px;
     border: none;
-     cursor: pointer;
+    cursor: pointer;
+    align-self: center;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    background-color: #008489;
+}
+
+
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form {
+        padding: 15px;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+    }
 }

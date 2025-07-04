@@ -17,7 +17,7 @@
       width: 100%;
       top: 0;
       left: 0;
-      z-index: 1;
+      z-index: 2;
     }
     .navbar{
     display: flex;
@@ -54,7 +54,11 @@
       border-radius: 25px;
       cursor: pointer;
       font-weight: 600;
+      text-decoration: none;
     }
+
+
+
 
     /* hero section */
     .hero{
@@ -92,6 +96,7 @@
       border-radius: 30px;
       font-weight: 600;
       cursor: pointer;
+      text-decoration: none;
     }
     .emergency-btn{
       border: 2px solid red;
@@ -171,7 +176,7 @@
 
     .swiper {
       width: 100%;
-      height: 500px;
+      height: 50vh;
     }
 
     .swiper-slide {
@@ -192,6 +197,7 @@
     /* footer */
     .footer{
       background: #1b1a1a;
+      width: 100%;
     }
     .data{
       display: flex;
@@ -267,4 +273,78 @@ font-size: 15px;
 }
 hr{
   margin: 45px;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle div {
+  width: 25px;
+  height: 3px;
+  background-color: #00795c;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    padding: 20px 0;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    z-index: 1;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .heading {
+    max-width: 100%;
+  }
+
+  .main {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .heading2 {
+    margin-top: 2rem;
+  }
+
+  .data {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
 }
