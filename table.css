@@ -4,14 +4,25 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #0a1d2b;
-    color: #fff;
-    text-align: left;
-
+    padding: 40px;
     
 }
-table{
+table,tr{
+  border: 1px solid rgb(216, 195, 195);
   width: 80%;
-  padding: 40px;
+  background-color:rgb(224, 230, 228);
   text-align: center;
+  border-collapse: collapse;
+  height: 40px;
+  margin: auto;
+  
+  
+}
+tr:hover{
+    background-color: #b9ddd6;
+}
+th{
+
+  color: white;
+    background-color: #009879;
 }
