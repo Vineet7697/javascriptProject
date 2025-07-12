@@ -6,11 +6,12 @@
     <link rel="stylesheet" href="table.css">
     <title>Document</title>
 </head>
-<body>
-    <table>
+<body onload="FetchData()">
+    search: <input type="text" id="search" oninput="searchin()"> <br><br>
+    <table border="1">
         <thead>
             <th>Name</th>
-            <th>Email</th>
+            <th>Age</th>
             <th>Phone Number</th>
             <th>Date</th>
             <th>Time</th>
@@ -18,10 +19,11 @@
             <th>Update</th>
             <th>Delete</th>
         </thead>
-        <tbody  id="showdata">
+        <tbody  id="dataShow">
 
     </tbody>
     </table>
+    <div id="updateForm"></div>
     
     <script src="/booking.js"></script>
 </body>
